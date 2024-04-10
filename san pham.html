@@ -1,0 +1,696 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>San pham</title>
+	<link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/sp.css">
+	<link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.css">
+	<link rel="stylesheet" href="./fontawesome-free-6.5.1-web/css/all.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body style="background-color: #f3f6f9;">
+	<div style="background-color: white;">
+		<!--------------------------------------------------------------------------->
+		<!-----------------------------header----------------------------------------->
+		<!--------------------------------------------------------------------------->
+		<div class="row">
+			<div class="col-lg-3">
+				<img src="./images/logo.png" class="logo" />
+			</div>
+			<div class="col-lg-5 menu">
+				<ul>
+					<li><a href="/tranchu.html">Trang chủ</a></li>
+					<li><a href="/san pham.html">Điện thoại</a></li>
+					<li><a href="/phukien.html">Phụ kiện</a></li>
+					<li><a href="/tintuc.html">Tin tức </a></li>
+				</ul>
+			</div>
+			<div class="col-lg-4 menu1">
+				<div class="search search-text" style="display: inline-block; align-items: center;">
+					<input type="search" placeholder="">
+					<a href="#" class="search-btn" style="display: inline-block; align-items: center;">
+						<i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+					</a>
+				</div>
+
+				<a href="#" class="search-userbtn" style="display: inline-block; align-items: center;">
+					<i class="fa-regular fa-user" style="color: black;"></i>
+				</a>
+
+				<a href="#" class="search-bagbtn">
+					<i class="fa-solid fa-bag-shopping" style="color: black;"></i>
+				</a>
+
+			</div>
+
+		</div>
+	</div>
+	<div class="container">
+		<ul id="filters" class="filters">
+			<li>Lọc danh sách</li>
+			<li>
+				<div id="box-filter-cats" class="dropdown filter-cats filter-radio"> <button class="dropdown-toggle"
+						data-toggle="dropdown"> <b>Điện thoại</b> </button>
+					<ul class="items dropdown-menu">
+						<li><a href="/san pham.html" class="active filter-item" data-value="6">Điện thoại</a></li>
+						<li><a href="/phu-kien.html" class="filter-item" data-value="7">Phụ kiện</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<div id="box-filter-brands" class="dropdown filter-brands filter-radio col-3"><i
+						class="fa fa-minus-circle remove" data-toggle="tooltip" title=""
+						data-original-title="Bỏ chọn"></i> <button class="dropdown-toggle" data-toggle="dropdown">
+						<div class="active"><i>Thương hiệu:</i> Samsung</div>
+					</button>
+					<ul class="items dropdown-menu">
+						<li><a href="/dien-thoai-iphone.html" class="" data-value="4">Apple</a></li>
+						<li><a href="/dien-thoai-samsung.html" class="active filter-item" data-value="1">Samsung</a>
+						</li>
+						<li><a href="/dien-thoai-google.html" class="" data-value="8">Google</a></li>
+						<li><a href="/dien-thoai-xiaomi.html" class="" data-value="2">Xiaomi</a></li>
+						<li><a href="/dien-thoai-asus.html" class="" data-value="9">Asus</a></li>
+						<li><a href="/dien-thoai-zte.html" class="" data-value="10">ZTE</a></li>
+						<li><a href="/dien-thoai-huawei.html" class="" data-value="12">Huawei</a></li>
+						<li><a href="/dien-thoai-meizu.html" class="" data-value="19">Meizu</a></li>
+						<li><a href="/dien-thoai-vivo.html" class="" data-value="13">Vivo</a></li>
+						<li><a href="/dien-thoai-oneplus.html" class="" data-value="14">OnePlus</a></li>
+						<li><a href="/dien-thoai-realme.html" class="" data-value="18">Realme</a></li>
+						<li><a href="/dien-thoai-sony.html" class="" data-value="5">Sony</a></li>
+						<li><a href="/dien-thoai-lg.html" class="" data-value="7">LG</a></li>
+						<li><a href="/dien-thoai-lenovo.html" class="" data-value="11">Lenovo</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<div id="box-filter-options" class="dropdown filter-options filter-radio col-3"> <button
+						class="dropdown-toggle" data-toggle="dropdown"> RAM </button>
+					<ul class="items dropdown-menu">
+						<li><button type="button" class="" data-value="179">4GB</button> </li>
+						<li><button type="button" class="" data-value="180">6GB</button> </li>
+						<li><button type="button" class="" data-value="174">8GB</button> </li>
+						<li><button type="button" class="" data-value="176">12GB</button> </li>
+						<li><button type="button" class="" data-value="181">16GB</button> </li>
+						<li><button type="button" class="" data-value="182">64GB</button> </li>
+						<li><button type="button" class="" data-value="187">18GB</button> </li>
+						<li><button type="button" class="" data-value="209">Pixel 7 Series</button> </li>
+						<li><button type="button" class="" data-value="217">24GB</button> </li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<div id="box-filter-options" class="dropdown filter-options filter-radio col-3"> <button
+						class="dropdown-toggle" data-toggle="dropdown"> Dung lượng </button>
+					<ul class="items dropdown-menu">
+						<li><button type="button" class="" data-value="10">16GB</button> </li>
+						<li><button type="button" class="" data-value="11">32GB</button> </li>
+						<li><button type="button" class="" data-value="12">64GB</button> </li>
+						<li><button type="button" class="" data-value="13">128GB</button> </li>
+						<li><button type="button" class="" data-value="14">256GB</button> </li>
+						<li><button type="button" class="" data-value="15">512GB</button> </li>
+						<li><button type="button" class="" data-value="16">1TB</button> </li>
+						<li><button type="button" class="" data-value="194">12GB</button> </li>
+						<li><button type="button" class="" data-value="196">640GB</button> </li>
+						<li><button type="button" class="" data-value="223">512</button> </li>
+						<li><button type="button" class="" data-value="236">129GB</button> </li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<div id="box-filter-prices" class="dropdown filter-prices filter-radio col-3"> <button
+						class="dropdown-toggle" data-toggle="dropdown"> Mức giá </button>
+					<ul class="items dropdown-menu">
+						<li><button type="button" class="" data-value="min-2000000">Dưới 2 triệu</button> </li>
+						<li><button type="button" class="" data-value="2000000-4000000">Từ 2 - 4 triệu</button> </li>
+						<li><button type="button" class="" data-value="4000000-7000000">Từ 4 - 7 triệu</button> </li>
+						<li><button type="button" class="" data-value="7000000-13000000">Từ 7 - 13 triệu</button> </li>
+						<li><button type="button" class="" data-value="13000000-20000000">Từ 13 - 20 triệu</button>
+						</li>
+						<li><button type="button" class="" data-value="20000000-max">Trên 20 triệu</button> </li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<div id="box-filter-sort" class="dropdown filter-sort filter-radio col-2"> <button
+						class="dropdown-toggle" data-toggle="dropdown"> Xếp theo </button>
+					<ul class="items dropdown-menu">
+						<li><button type="button" class="active filter-item" data-value="default">Mới nhất</button>
+						</li>
+						<li><button type="button" class="" data-value="focus_asc">Nổi bật</button> </li>
+						<li><button type="button" class="" data-value="price_asc">Giá thấp đến cao</button> </li>
+						<li><button type="button" class="" data-value="price_desc">Giá cao đến thấp</button> </li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="wrap">
+		<div class="row box-body">
+			<div class="products-wrapper">
+				<div class="products">
+
+					<div class=" product" style="border-left-radius: 15px; border-left-color: white;">
+						<div class="dt1 img-center">
+							<a href="#" title="Pixel 7a 128GB Mới 100% Fullbox"><img
+									alt="Pixel 7a 128GB Mới 100% Fullbox" title="Pixel 7a 128GB Mới 100% Fullbox"
+									width="220" height="220" class="lazyload" data-src=""
+									src="/images/s24u_xam.webp"></a>
+							<span class="status-label">Mới Fullbox - Việt Nam </span>
+
+							<div class="txt">
+								<h3 class="pname"><a href="#">alaxy S24 Ultra 256GB Mới Fullbox - Việt Nam</a>
+								</h3>
+								<ul class="price-text price-html" data-stock="1">
+									<li class="price">24.990.000₫</li>
+								</ul>
+								<div class="star-wrap" data-votes="4.5"><b>4.5</b>/5 <i class="fa fa-star"></i>
+									<div class="numvote">4 đánh giá</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class=" product">
+						<div class="dt1 img-center"> <a href="/pixel-7a-128gb-moi-fullbox.html"
+								title="Pixel 7a 128GB Mới 100% Fullbox"><img alt="Pixel 7a 128GB Mới 100% Fullbox"
+									title="Pixel 7a 128GB Mới 100% Fullbox" width="220" height="220" class="lazyload"
+									data-src="" src="/images/s24_tim.webp"></a><span class="status-label">Mới Fullbox -
+								Việt Nam</span></div>
+						<div class="txt">
+							<h3 class="pname"><a href="/pixel-7a-128gb-moi-fullbox.html">Galaxy S24 Plus 256GB Mới
+									Fullbox - Việt Nam</a></h3>
+							<ul class="price-text price-html" data-stock="1">
+								<li class="price">18.990.000₫</li>
+							</ul>
+							<div class="star-wrap" data-votes="4.5"><b>4.5</b>/5 <i class="fa fa-star"></i>
+								<div class="numvote">4 đánh giá</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="product">
+						<div class="dt1 img-center"> <a href="/pixel-7a-128gb-moi-fullbox.html"
+								title="Pixel 7a 128GB Mới 100% Fullbox"><img alt="Pixel 7a 128GB Mới 100% Fullbox"
+									title="Pixel 7a 128GB Mới 100% Fullbox" width="220" height="220" class="lazyload"
+									data-src="" src="/images/flip5_xanh.webp"></a>
+							<span class="status-label">Mới Fullbox</span>
+						</div>
+						<div class="txt">
+							<h3 class="pname"><a href="/iphone-14-pro-max-128gb-moi-fullbox.html">Galaxy Z Flip5
+									(8GB|512GB) Mới Fullbox</a></h3>
+							<ul class="price-text price-html" data-stock="1">
+								<li class="price">14.990.000₫</li>
+							</ul>
+							<div class="star-wrap" data-votes="4.9"><b>4.9</b>/5 <i class="fa fa-star"></i>
+								<div class="numvote">15 đánh giá</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="product">
+						<div class="dt1 img-center"> <a href="/pixel-7a-128gb-moi-fullbox.html"
+								title="Pixel 7a 128GB Mới 100% Fullbox"><img alt="Pixel 7a 128GB Mới 100% Fullbox"
+									title="Pixel 7a 128GB Mới 100% Fullbox" width="220" height="220" class="lazyload"
+									data-src="" src="/images/fold5_xanh.webp"></a><span class="status-label">Mới
+								Fullbox</span></div>
+						<div class="txt">
+							<h3 class="pname"><a
+									href="/galaxy-s21-5g-128gb-moi-99-like-new-ban-my-2sim-chip-snapdragon-888-fullbox.html">Galaxy
+									Z Fold5 (12GB|512GB) Mới Fullbox</a></h3>
+							<ul class="price-text price-html" data-stock="4">
+								<li class="price">28.490.000₫</li>
+							</ul>
+							<div class="star-wrap" data-votes="4.9"><b>4.9</b>/5 <i class="fa fa-star"></i>
+								<div class="numvote">15 đánh giá</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="product" style="border-right-radius: 15px; border-right-color: white;">
+						<div class="dt1 img-center"> <a href="/pixel-7a-128gb-moi-fullbox.html"
+								title="Pixel 7a 128GB Mới 100% Fullbox"><img alt="Pixel 7a 128GB Mới 100% Fullbox"
+									title="Pixel 7a 128GB Mới 100% Fullbox" width="220" height="220" class="lazyload"
+									data-src="" src="/images/s23_ultra_cream.webp" style="width: 100%;"></a><span
+								class="status-label">Mới Fullbox - Mỹ</span></div>
+						<div class="txt">
+							<h3 class="pname"><a href="/galaxy-s22-ultra-256gb-moi-fullbox-my.html">Galaxy S23 Ultra
+									512GB Mới Fullbox - Mỹ</a></h3>
+							<ul class="price-text price-html" data-stock="1">
+								<li class="price">18.990.000₫</li>
+							</ul>
+							<div class="star-wrap" data-votes="4.9"><b>4.9</b>/5 <i class="fa fa-star"></i>
+								<div class="numvote">12 đánh giá</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row box-body">
+			<div class="products-wrapper">
+				<div class="products">
+
+					<div class=" product" style="border-left-radius: 15px; border-left-color: white;">
+						<div class="dt1 img-center">
+							<a href="/pixel-7a-128gb-moi-fullbox.html" title="Pixel 7a 128GB Mới 100% Fullbox"><img
+									alt="Pixel 7a 128GB Mới 100% Fullbox" title="Pixel 7a 128GB Mới 100% Fullbox"
+									width="220" height="220" class="lazyload" data-src=""
+									src="/images/ip15_prm_titan.webp"></a>
+							<span class="status-label">Mới Fullbox </span>
+
+							<div class="txt">
+								<h3 class="pname"><a href="/pixel-8-pro-128gb-moi-fullbox.html">iPhone 15 Pro Max 256GB
+										Mới Fullbox - Active online</a>
+								</h3>
+								<ul class="price-text price-html" data-stock="1">
+									<li class="price">26.990.000₫</li>
+								</ul>
+								<div class="star-wrap" data-votes="4.5"><b>4.5</b>/5 <i class="fa fa-star"></i>
+									<div class="numvote">4 đánh giá</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class=" product">
+						<div class="dt1 img-center"> <a href="#" title="Pixel 7a 128GB Mới 100% Fullbox"><img
+									alt="Pixel 7a 128GB Mới 100% Fullbox" title="Pixel 7a 128GB Mới 100% Fullbox"
+									width="220" height="220" class="lazyload" data-src=""
+									src="/images/iphone-13-pro-max-128gb-chinh-hang-moi-fullbox-chua-active.webp"></a><span
+								class="status-label">Mới Fullbox</span></div>
+						<div class="txt">
+							<h3 class="pname"><a href="/pixel-7a-128gb-moi-fullbox.html">iPhone 13 Pro 128GB like
+									new</a></h3>
+							<ul class="price-text price-html" data-stock="1">
+								<li class="price">13.990.000₫</li>
+							</ul>
+							<div class="star-wrap" data-votes="4.5"><b>4.5</b>/5 <i class="fa fa-star"></i>
+								<div class="numvote">4 đánh giá</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="product">
+						<div class="dt1 img-center"> <a href="/pixel-7a-128gb-moi-fullbox.html"
+								title="Pixel 7a 128GB Mới 100% Fullbox"><img alt="Pixel 7a 128GB Mới 100% Fullbox"
+									title="Pixel 7a 128GB Mới 100% Fullbox" width="220" height="220" class="lazyload"
+									data-src="" src="/images/xiaomi_14_pink.webp"></a>
+							<span class="status-label">Mới Fullbox</span>
+						</div>
+						<div class="txt">
+							<h3 class="pname"><a href="/iphone-14-pro-max-128gb-moi-fullbox.html">Xiaomi 14 (8GB|256GB)
+									Mới Fullbox</a></h3>
+							<ul class="price-text price-html" data-stock="1">
+								<li class="price">Liên Hệ</li>
+							</ul>
+							<div class="star-wrap" data-votes="4.9"><b>4.9</b>/5 <i class="fa fa-star"></i>
+								<div class="numvote">15 đánh giá</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="product">
+						<div class="dt1 img-center"> <a href="" title="Pixel 7a 128GB Mới 100% Fullbox"><img
+									alt="Pixel 7a 128GB Mới 100% Fullbox" title="Pixel 7a 128GB Mới 100% Fullbox"
+									width="220" height="220" class="lazyload" data-src=""
+									src="/images/pixel_fold.webp"></a><span class="status-label">Mới Fullbox</span>
+						</div>
+						<div class="txt">
+							<h3 class="pname"><a href="">Pixel Fold 512GB Mới Fullbox
+								</a></h3>
+							<ul class="price-text price-html" data-stock="4">
+								<li class="price">Liên hệ</li>
+							</ul>
+							<div class="star-wrap" data-votes="4.9"><b>4.9</b>/5 <i class="fa fa-star"></i>
+								<div class="numvote">15 đánh giá</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="product " style="border-right-radius: 15px; border-right-color: white;">
+						<div class="dt1 img-center"> <a href="" title="Pixel 7a 128GB Mới 100% Fullbox"><img
+									alt="Pixel 7a 128GB Mới 100% Fullbox" title="Pixel 7a 128GB Mới 100% Fullbox"
+									width="220" height="220" class="lazyload" data-src=""
+									src="/images/redmi_k50_gaming_xanh.webp" style="width: 100%;"></a><span
+								class="status-label">Mới Fullbox</span></div>
+						<div class="txt">
+							<h3 class="pname"><a href="">Redmi K50 Gaming (12GB|256GB) Mới Fullbox</a></h3>
+							<ul class="price-text price-html" data-stock="1">
+								<li class="price">11.990.000₫</li>
+							</ul>
+							<div class="star-wrap" data-votes="4.9"><b>4.9</b>/5 <i class="fa fa-star"></i>
+								<div class="numvote">12 đánh giá</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="brands">
+		
+			<div class="brands-wrapper">
+				<div class="products">
+					<!-- Define Number of product for SLIDER -->
+					<div class="customNavigation">
+						<a class="btn prev brand_prev">&nbsp;Prev</a>
+						<a class="btn next brand_next">&nbsp;Next</a>
+					</div>
+					<ul id="brand-carousel" class="cz-carousel product_list owl-carousel owl-theme"
+						style="opacity: 1; display: block;">
+						<div class="owl-wrapper-outer">
+							<div class="owl-wrapper"
+								style="width: 2562px; left: 0px; display: block; transition: all 0ms ease 0s; transform: translate3d(0px, 0px, 0px);">
+								<div class="owl-item" style="width: 250px;">
+									<li class="double-slideitem">
+										<ul>
+											<!-- <li class="item"> -->
+											<div class="brand-image">
+												<a href="#" title="Ambrane">
+													<img src="https://demo.codezeel.com/prestashop/PRS09/PRS090216/img/m/16.jpg"
+														alt="Ambrane">
+												</a>
+											</div>
+											<!-- </li> -->
+											<!-- <li class="item"> -->
+											<div class="brand-image">
+												<a href="" title="Apple">
+													<img src="https://demo.codezeel.com/prestashop/PRS09/PRS090216/img/m/3.jpg"
+														alt="Apple">
+												</a>
+											</div>
+											<!-- </li> -->
+
+										</ul>
+									</li>
+								</div>
+								<div class="owl-item" style="width: 250px;">
+									<li class="double-slideitem">
+										<ul>
+											<!-- <li class="item"> -->
+											<div class="brand-image">
+												<a href="#" title="Asus">
+													<img src="https://demo.codezeel.com/prestashop/PRS09/PRS090216/img/m/10.jpg"
+														alt="Asus">
+												</a>
+											</div>
+											<!-- </li> -->
+											<!-- <li class="item"> -->
+											<div class="brand-image">
+												<a href="#" title="Boss">
+													<img src="https://demo.codezeel.com/prestashop/PRS09/PRS090216/img/m/13.jpg"
+														alt="Boss">
+												</a>
+											</div>
+											<!-- </li> -->
+
+										</ul>
+									</li>
+								</div>
+								<div class="owl-item" style="width: 250px;">
+									<li class="double-slideitem">
+										<ul>
+											<!-- <li class="item"> -->
+											<div class="brand-image">
+												<a href="#" title="canon">
+													<img src="https://demo.codezeel.com/prestashop/PRS09/PRS090216/img/m/7.jpg"
+														alt="canon">
+												</a>
+											</div>
+											<!-- </li> -->
+											<!-- <li class="item"> -->
+											<div class="brand-image">
+												<a href="#" title="Dell">
+													<img src="https://demo.codezeel.com/prestashop/PRS09/PRS090216/img/m/4.jpg"
+														alt="Dell">
+												</a>
+											</div>
+											<!-- </li> -->
+
+										</ul>
+									</li>
+								</div>
+								<div class="owl-item" style="width: 250px;">
+									<li class="double-slideitem">
+										<ul>
+											<!-- <li class="item"> -->
+											<div class="brand-image">
+												<a href="#" title="HP">
+													<img src="https://demo.codezeel.com/prestashop/PRS09/PRS090216/img/m/12.jpg"
+														alt="HP">
+												</a>
+											</div>
+											<!-- </li> -->
+											<!-- <li class="item"> -->
+											<div class="brand-image">
+												<a href="#" title="Intex">
+													<img src="https://demo.codezeel.com/prestashop/PRS09/PRS090216/img/m/15.jpg"
+														alt="Intex">
+												</a>
+											</div>
+											<!-- </li> -->
+
+										</ul>
+									</li>
+								</div>
+								<div class="owl-item" style="width: 250px;">
+									<li class="double-slideitem">
+										<ul>
+											<!-- <li class="item"> -->
+											<div class="brand-image">
+												<a href="#" title="JBL">
+													<img src="https://demo.codezeel.com/prestashop/PRS09/PRS090216/img/m/14.jpg"
+														alt="JBL">
+												</a>
+											</div>
+											<!-- </li> -->
+											<!-- <li class="item"> -->
+											<div class="brand-image">
+												<a href="#" title="lG">
+													<img src="https://demo.codezeel.com/prestashop/PRS09/PRS090216/img/m/8.jpg"
+														alt="lG">
+												</a>
+											</div>
+											<!-- </li> -->
+
+										</ul>
+									</li>
+								</div>
+								<div class="owl-item" style="width: 250px;">
+									<li class="double-slideitem">
+										<ul>
+											<!-- <li class="item"> -->
+											<div class="brand-image">
+												<a href="" title="MI">
+													<img src="https://demo.codezeel.com/prestashop/PRS09/PRS090216/img/m/11.jpg"
+														alt="MI">
+												</a>
+											</div>
+											<!-- </li> -->
+											<!-- <li class="item"> -->
+											<div class="brand-image">
+												<a href="" title="Panasonic">
+													<img src="https://demo.codezeel.com/prestashop/PRS09/PRS090216/img/m/9.jpg"
+														alt="Panasonic">
+												</a>
+											</div>
+											<!-- </li> -->
+
+										</ul>
+									</li>
+								</div>
+								<div class="owl-item" style="width: 250px;">
+									<li class="double-slideitem">
+										<ul>
+											<!-- <li class="item"> -->
+											<div class="brand-image">
+												<a href="#" title="Samsung">
+													<img src="https://demo.codezeel.com/prestashop/PRS09/PRS090216/img/m/6.jpg"
+														alt="Samsung">
+												</a>
+											</div>
+											<!-- </li> -->
+											<!-- <li class="item"> -->
+											<div class="brand-image">
+												<a href="#" title="Sony">
+													<img src="https://demo.codezeel.com/prestashop/PRS09/PRS090216/img/m/5.jpg"
+														alt="Sony">
+												</a>
+											</div>
+											<!-- </li> -->
+
+										</ul>
+									</li>
+								</div>
+							</div>
+						</div>
+						<div class="owl-controls clickable">
+							<div class="owl-pagination">
+								<div class="owl-page active"><span class=""></span></div>
+								<div class="owl-page"><span class=""></span></div>
+								<div class="owl-page"><span class=""></span></div>
+							</div>
+						</div>
+					</ul>
+				</div>
+			</div>
+
+
+	</section>
+	<div class="row">
+	<section class="section-newsletter" >
+		<div class="container1 newsletter">
+		  <h4 class="newsletter__desc">Kết nối với chúng tôi</h4>
+		  <h2 class="newsletter__title">Đăng ký nhận bản tin</h2>
+		  <form action="" method="post" class="newsletter__form">
+			<div class="row">
+			  <div class="col-lg-8 col-lg-offset-2 col-md-12 col-md-offset-0">
+				<div class="row">
+				  <div class="col-sm-7 col-md-8">
+					<input type="hidden" name="_token" value="8Bc5KovCM1L5jy1mmjsO4ff7N2q6A4eHAA5ipag5">
+					<input type="text" class="form-control" id="subscribe_email" autocomplete="off"
+					  placeholder="Nhập email của bạn">
+				  </div>
+				  <div class="col-sm-5 col-md-4">
+					<button type="button" class="btn1 btn-default" id="btn_subscribe" disabled=""><span>Nhận bản tin</span>
+					</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </form>
+		</div>
+	  </section>
+	  </div>
+	  <section class="social-fixed">
+	
+		<a href="/#" title="Lên đầu trang" target="_self"
+		  class="advertise-item advertise-159 advertise-item-social_fixed advertise gotop"><img
+			src="/images/gotop.webp" alt="Lên đầu trang" title="Lên đầu trang"
+			width="50" height="50" class="advertise-img img-cover" data-id="159" data-pos="social_fixed"></a>
+	  </section>
+	  <div class="chat-icon">
+		<img src="./images/2899298.png" alt="chat" />
+	  </div>
+	
+	  <div class="chatbot-box">
+		<div class="chat-profile">
+		  <img src="./images/2899298.png" alt="" />
+	
+		  <div class="chat-profile-text">
+			<h3>Thoai Mobie </h3>
+			<p>Online</p>
+		  </div>
+		</div>
+		<div id="chatlist">
+		  <ul></ul>
+		</div>
+	
+		<div class="message-box-wrap">
+		  <div class="message-box"></div>
+		  <button id="send">></button>
+		</div>
+	
+		<div class="admin-client-message-wrap">
+		  <select name="service" data-question="Bạn cần trợ giúp gì?">
+			<option> Điện thoại</option>
+			<option> Phụ kiện</option>
+			<option>Tư vấn và giải đáp</option>
+			<option>Báo sự cố</option>
+		  </select>
+		  <input type="text" name="name" data-question="Bạn tên là gì" />
+		  <input type="text" name="email" data-question="Nhập email của bạn" data-name required />
+		  <input type="text" name="phone" data-question="Số điện thoại của bạn" />
+		  <div data-question="Đồng ý ?">
+			<button id="confirm">Yes</button>
+			<button id="notconfirm">No</button>
+		  </div>
+		</div>
+	
+		<form id="submit_info_form">
+		  <div class="submit_info"></div>
+		  <input type="submit" value="Send" id="submit" name="" />
+		</form>
+	  </div>
+	  
+	  <footer class="footer">
+		<div class="container">
+		  <div class="footer__top">
+			<div class="row">
+			  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+				<p class="footer__top__logo"><img src="./images/logo.png" alt="Thoaimobi" class="logo"
+					style="margin: 10px;"></p>
+				<p><b>Cửa hàng di động Thoai mobie</b><br>- Địa chỉ trụ sở: 02 Trường Sa, Q.Bình Thạnh, tp.Hồ Chí Minh, Việt
+				  Nam
+				  <br>- Mã số thuế: 2251068258
+				</p>
+			  </div>
+			  <div class="col-xs-12 col-sm-6 col-md-3">
+				<ul class="footer__top__menu">
+				  <li><a href="" title="Sản phẩm">Sản phẩm</a></li>
+				  <li><a href="" title="Thông tin doanh nghiệp">Giới thiệu</a></li>
+				  <li><a href="" title="Hệ thống phân phối">Hệ thống phân phối</a>
+				  </li>
+				</ul>
+			  </div>
+			  <div class="col-xs-12 col-sm-6 col-md-3">
+				<ul class="footer__top__menu">
+				  <li><a href="" title="Tại sao chọn Dalat Hasfarm?">Cơ hội nghề nghiệp</a></li>
+				  <li><a href="" title="Tin tức &amp; Sự kiện">Tin tức &amp; Sự
+					  kiện</a></li>
+				  <li><a href="" title="Liên hệ">Liên hệ</a></li>
+				</ul>
+			  </div>
+	
+			  <div class="col-xs-12 col-sm-6 col-md-2 footer__top__social">
+				<h4>Theo dõi chúng tôi</h4>
+				<ul>
+				  <i class="fa-brands fa-facebook"></i>
+				  <i class="fa-brands fa-youtube"></i>
+				  <i class="fa-brands fa-tiktok"></i>
+				  <i class="fa-brands fa-instagram"></i>
+				</ul>
+			  </div>
+			  <div class="col-xs-12 col-sm-6 col-md-2 hidden-xs">
+				<ul class="footer__top__menu sitemap">
+				  
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		  <div class="footer__copyright"> Copyright © 2024 Thoai mobie store Limited </div>
+		</div>
+	  </footer>
+	  
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			// Xử lý sự kiện click cho button.dropdown-toggle
+			$('.dropdown-toggle').click(function () {
+				// Tìm dropdown-menu gần nhất và toggle hiển thị/ẩn đi
+				$(this).next('.dropdown-menu').toggle();
+			});
+
+			// Xử lý sự kiện click bên ngoài dropdown menu để ẩn dropdown menu khi không được focus
+			$(document).click(function (e) {
+				var target = e.target;
+				if (!$(target).is('.dropdown-toggle') && !$(target).parents().is('.dropdown-toggle')) {
+					$('.dropdown-menu').hide();
+				}
+			});
+		});
+	</script>
+	<script src="/a.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</body>
+</html>
