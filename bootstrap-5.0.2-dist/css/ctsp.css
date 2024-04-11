@@ -1127,7 +1127,7 @@ table {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 101%;
     z-index: 1000;
     background-color: white; /* Điều chỉnh màu nền của menu cố định */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Thêm đổ bóng cho menu cố định */
