@@ -837,7 +837,7 @@ b {
     height: 50px;
 }
 .chat-profile-text {
-    margin-top: 30;
+    margin-top: 15px;
     color: black;
     padding: 10px;
     margin-left: 50;
@@ -847,6 +847,10 @@ b {
     color: #04d004;
     font-weight: bold;
     font-size: 0.8em;
+}
+.chat-profile-text h3{
+    font-size: 18px;
+    padding: 15px 0px !important;
 }
 .chatbot-box.active {
     transform: scaleY(1);
@@ -1115,11 +1119,29 @@ display: grid;
         background-color: white;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
+    .img-cover {
+        margin: auto;
+        display: block;
+        object-fit: cover;
+    }
+    .social-fixed {
+        gap: 20px;
+        bottom: 20%;
+        left: 50px;
+        right: 0px !important;
+        z-index: 1000;
+        display: grid;
+        position: fixed;
+        text-align: center;
+    }
     
     
 }
 .icon{
     font-size: 20px;
+}
+.search-menu{
+    display: none;
 }
 
 
