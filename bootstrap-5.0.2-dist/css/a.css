@@ -1127,15 +1127,21 @@ display: grid;
     .social-fixed {
         gap: 20px;
         bottom: 20%;
-        left: 50px;
-        right: 0px !important;
+       
+        
         z-index: 1000;
         display: grid;
         position: fixed;
         text-align: center;
     }
     
-    
+    .search-menu{
+        display: block !important;
+        display: inline-block !important;
+    }
+    body {
+        overflow-x: hidden;
+    }
 }
 .icon{
     font-size: 20px;
