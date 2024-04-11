@@ -19,7 +19,7 @@ body {
     /* Điều chỉnh khoảng cách giữa các mục menu */
 }
 
-.search-userbtn {
+.search-userbtn,.search-bagbtn,.search-menu{
     display: inline-block;
     margin-right: 20px;
 }
@@ -54,6 +54,7 @@ body {
     top: 0;
 }
 .search-text {
+    display: inline-block;
     width: 60%;
     height: 35px;
     background-color: none;
@@ -954,6 +955,9 @@ b {
     padding: 0;
 }
 @media screen and (max-width: 767px) {
+    .search-text {
+        display: none;
+    }
     .ws-menu-mobile {
         right: 0;
         top: 8px;
@@ -1084,6 +1088,39 @@ display: grid;
         position: relative;
         z-index: 1;
     }
+    .logo {
+        width: 30%;
+        text-align: center;
+        margin: 10px 140px;
+    }
+    .menu:active {
+        /* Thêm các thuộc tính CSS ở đây để định dạng menu khi nó được nhấp vào */
+        background-color: #f0f0f0;
+        color: #333;
+    }
+    .icon{
+        font-size: 20px !important;
+    }
+    .menu1 {
+        padding-top: 0px;
+        text-align: center;
+    }
+    .fixed-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 102%;
+        z-index: 1000;
+        background-color: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    
 }
+.icon{
+    font-size: 20px;
+}
+
 
 

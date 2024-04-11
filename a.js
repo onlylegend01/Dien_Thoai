@@ -194,3 +194,15 @@ zoomLens.addEventListener('mouseleave', function() {
     zoomWindow.style.display = 'none';
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  var mmenuBtn = document.getElementById('btn-mmenu');
+  var menu = document.querySelector('.menu');
+
+  // Thêm sự kiện click cho nút menu di động
+  mmenuBtn.addEventListener('click', function() {
+      // Toggle class 'active' cho phần menu
+      menu.classList.toggle('active');
+  });
+});
+
+
