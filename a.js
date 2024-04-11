@@ -120,6 +120,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
     // Xử lý sự kiện click trên liên kết
     goToTopLink.addEventListener('click', function(event) {
+        console.log('ok');
       // Ngăn chặn hành vi mặc định của liên kết
       event.preventDefault();
   
